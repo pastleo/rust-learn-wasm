@@ -5,6 +5,7 @@ fn main() {
     sec_2_8_operators();
     sec_2_9_scope_shadowing();
     sec_2_10_const();
+    sec_2_11_stack_heap();
 }
 
 fn sec_2_7_core_data_types() {
@@ -100,5 +101,17 @@ fn sec_2_10_const() {
         GLOBAL_MUT_STATIC = 777;
         println!("GLOBAL_MUT_STATIC = {}", GLOBAL_MUT_STATIC);
     }
+    println!("");
+}
+
+fn sec_2_11_stack_heap() {
+    println!(">> 2-11: stack heap");
+
+    let x:u8 = 16;
+    println!("x:u8 = {}, size = {}", x, mem::size_of_val(&x));
+
+    let y:Box<u8> = Box::new(15); // kind of a pointer, the `15` is store in the heap
+    println!("y:Box<u8> = {}, size = {}", *y, mem::size_of_val(&y));
+
     println!("");
 }
