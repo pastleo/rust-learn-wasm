@@ -9,5 +9,6 @@ fn main() {
     udemy::cht2::sec_2_9_scope_shadowing();
     udemy::cht2::sec_2_10_const();
     udemy::cht2::sec_2_11_stack_heap();
+    udemy::cht3::sec_3_12_if();
+    udemy::cht3::sec_3_13_while_loop();
 }
-
