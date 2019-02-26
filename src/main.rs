@@ -1,7 +1,11 @@
+mod leetcode;
 mod rs_book;
 mod udemy;
 
 fn main() {
+    leetcode::array::remove_duplicates_test();
+    leetcode::array::max_profit_test();
+
     rs_book::cht2::guessing_game();
 
     udemy::cht2::sec_2_7_core_data_types();
