@@ -1,6 +1,7 @@
 use leetcode::solution::Solution;
 
 impl Solution {
+    // https://leetcode.com/problems/remove-duplicates-from-sorted-array/
     pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
         if nums.len() == 0 { return 0; }
         let mut ni = 0;
@@ -17,6 +18,7 @@ impl Solution {
         return (ni + 1) as i32;
     }
 
+    // https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
     pub fn max_profit(prices: Vec<i32>) -> i32 {
         if prices.len() <= 1 { return 0; }
         let mut profit = 0;
