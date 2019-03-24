@@ -3,8 +3,10 @@ mod rs_book;
 mod udemy;
 
 fn main() {
-    leetcode::array::remove_duplicates_test();
+
     leetcode::array::max_profit_test();
+    leetcode::array::remove_duplicates_test();
+    leetcode::array::run_three_sum();
 
     rs_book::cht2::guessing_game();
 
