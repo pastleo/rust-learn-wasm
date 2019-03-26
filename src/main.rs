@@ -25,6 +25,10 @@ fn main() {
 
         401 => leetcode::interview_medium::three_sum(),
 
+        501 => leetcode::problems::min_distance(),
+
+        601 => leetcode::self_practice::max_common_length(),
+
         _ => help(),
     }
 }
@@ -46,6 +50,10 @@ fn help() {
         302 => leetcode::interview_easy::remove_duplicates(),
 
         401 => leetcode::interview_medium::three_sum(),
+
+        501 => leetcode::problems::min_distance(),
+
+        601 => leetcode::self_practice::max_common_length(),
 
         _ => help(),
     ");
